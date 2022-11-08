@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Thor</title>
+            <!--<link rel="stylesheet" type="text/css" href="c.css"--->
+            <style>* {
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                margin: 25%;
+                background-color: #180202;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: sans-serif;
+                background: rgb(24, 12, 12);
+                min-height: 100vh;
+                height: 100vh;
+            }
+            
+            #dps {
+                padding: 0;
+                border: 6px solid #7e3944;
+                width: 200px;
+                height: 200px;
+                box-shadow: rgb(87, 77, 77); 
+                border-top: 0.1px solid; 
+                border-radius: 100%;
+                animation: spin 2s ease-out infinite;
+                position: absolute;
+                top: 159px;
+                left: 146px;
+            
+            }
+
+       
+            
+            p {
+                margin: -130px 65px;
+                font-size: 25px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                color: #c71010;
+                animation: shake 1.5s linear infinite;
+            
+            }
+            
+            @keyframes spin {
+                0% {
+                    transform: rotate(270deg);
+                    box-shadow: 2px 2px 50px 5px #ff0000;
+                    border-right: 15px solid linear 0.15s;
+                    filter: hue-rotate(0deg);
+                }
+            
+                25% {
+                    transform: rotate(360deg);
+                    border-bottom: 15px solid linear 0.2s;
+                    border-left: 15px solid linear 0.2s;
+                    box-shadow: 2px 2px 50px 2px #ff0000;
+                }
+            
+                50% {
+                    transform: rotate(715deg);
+                    box-shadow: 2px 2px 50px 18px #ff0000;
+            
+                }
+            
+                100% {
+                    transform: rotate(730deg);
+                    box-shadow: 2px 2px 50px 9px #ff0000;
+                    filter: hue-rotate(360deg);
+                }
+            }
+            
+            @keyframes shake {
+                0% {
+                    transform: translate(0, 4px);
+                }
+            
+                25% {
+                    transform: translate(0, 0);
+                    filter: brightness(110%);
+                }
+            
+                40% {
+                    transform: translate(0, 4px);
+                    filter: brightness(130%);
+                }
+            
+                100% {
+                    transform: translate(0, 0);
+            
+            
+                }
+            }
+
+            @keyframes blinkMe{
+ 
+                0%{
+                    opacity: 0;
+                }
+
+                50%{
+                    opacity: 1;
+                }
+
+                100%{
+                    opacity: 0;
+                }
+
+            }
+            
+            h2 {
+                margin: 0%;
+                font-size: 4em;
+                font-weight: 500;
+                color: rgb(69, 73, 68);
+            }
+            
+            h2 span {
+                animation: animate 1s linear infinite;
+            }
+            
+            h2 span:nth-child(1) {
+                animation-delay: 0.0s;
+            }
+            
+            h2 span:nth-child(2) {
+                animation-delay: 0.2s;
+            }
+            
+            h2 span:nth-child(3) {
+                animation-delay: 0.4s;
+            }
+            
+            h2 span:nth-child(4) {
+                animation-delay: 0.6s;
+            }
+            
+            /*h2 span:nth-child(5) {
+                animation-delay: 0.0s;
+            }
+            
+            h2 span:nth-child(6) {
+                animation-delay: 0.0s;
+            }
+            
+            h2 span:nth-child(7) {
+                animation-delay: 0.s;
+            }*/
+            
+            @keyframes animate {
+            
+                0%,
+                80% {
+                    color: #333;
+                    text-shadow: none;
+                }
+            
+                100% {
+                    color: #fff;
+                    text-shadow: 0 0 10px #FFF,
+                        0 0 20px #FFF,
+                        0 0 40px #FFF,
+                        0 0 80px #FFF,
+                        0 0 120px #FFF,
+                        0 0 160px #FFF;
+                }
+            }
+            
+            #poi {
+                position: absolute;
+                top: 228px;
+                left: 383px;
+            }
+            #heart{
+                position: absolute;    
+                border: 6px solid #c4e025;     
+                animation: spin 2s ease-out infinite;
+                font-size: 60px;
+                border-radius : 50%;
+                top: 212px;
+                left: 202px;
+            }</style>
+        </head>
+        <body><div id="dps"></div>          
+            <div id="poi"><h2>
+                <span>T</span>
+                <span>H</span>
+                <span>O</span>
+                <span>R</span>
+              </h2></div>
+            
+            <a href="index.html"></a><div id="heart">⚡</div>                   
+        
+            
+        </body>
+        </html>
